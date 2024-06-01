@@ -281,8 +281,8 @@
                     <ColumnDefinition Width="1*" />
                </Grid.ColumnDefinitions>
                <local:MyButton Grid.Column="0" Margin="0,0,10,0" Height="35" Text="更新日志" EventType="打开网页" 
-                    EventData="https://github.com/MFn233/PCL-Mainpage/releases/latest" ToolTip="将前往GitHub查看最新版本的更新日志"/>
-               <local:MyButton Grid.Column="1" Margin="0,0,0,0" Height="35" Text="项目仓库" EventType="打开网页" EventData="https://github.com/MFn233/PCL-Mainpage"/>
+                    EventData="https://github.com/Clark2005/PCL2_Mainpage/releases" ToolTip="将前往GitHub查看最新版本的更新日志"/>
+               <local:MyButton Grid.Column="1" Margin="0,0,0,0" Height="35" Text="项目仓库" EventType="打开网页" EventData="https://github.com/Clark2005/PCL2_Mainpage"/>
           </Grid>
      </StackPanel>
 </local:MyCard>
