@@ -1,0 +1,335 @@
+﻿<!-- 这是 PCL2 的主页自定义文件。你可以通过修改这个文件来自定义 PCL2 主页：添加文本、打开网页、启动游戏，等等。
+     如果你倒腾这个文件把 PCL2 玩炸了，把这个文件直接删除就行了。
+     如果你懂得 WPF 的布局文件编写，你甚至可以做出不少的新玩意儿…… -->
+
+<!-- 小标题 -->
+<local:MyCard Margin="0,0,0,20" Height="40">
+  <TextBlock Margin="15,15,0,0" Foreground="{DynamicResource ColorBrush6}" HorizontalAlignment="Left"
+    Text="Clark2005" FontWeight="ExtraBold" FontStyle="Italic"/>
+  <TextBlock Margin="0,15,0,0" Foreground="{DynamicResource ColorBrush5}" HorizontalAlignment="Center"
+    Text="Plain Craft Launcher II" FontWeight="ExtraBold" FontStyle="Italic"/>
+  <local:MyButton Margin="0,10,10,10" Width="15" Height="15" HorizontalAlignment="Right" ToolTip="刷新数据" EventType="刷新主页">
+    <Path Fill="{DynamicResource ColorBrush5}" Stretch="Fill" Width="15" Height="15">
+      <Path.Data>
+        <PathGeometry FillRule="Nonzero" Figures="M256.455,8C322.724,8.119,382.892,34.233,427.314,76.685L463.029,40.97C478.149,25.851,504,36.559,504,57.941L504,192C504,205.255,493.255,216,480,216L345.941,216C324.559,216,313.851,190.149,328.97,175.029L370.72,133.279C339.856,104.38 299.919,88.372 257.49,88.006 165.092,87.208 87.207,161.983 88.0059999999999,257.448 88.764,348.009 162.184,424 256,424 297.127,424 335.997,409.322 366.629,382.444 371.372,378.283 378.535,378.536 382.997,382.997L422.659,422.659C427.531,427.531 427.29,435.474 422.177,440.092 378.202,479.813 319.926,504 256,504 119.034,504 8.001,392.967 8,256.002 7.999,119.193 119.646,7.755 256.455,8z" />
+      </Path.Data>
+    </Path>
+  </local:MyButton>
+  <local:MyButton Margin="0,10,40,10" Width="15" Height="15" HorizontalAlignment="Right" ToolTip="关于作者" EventType="打开网页" EventData="https://starscience.rthe.xyz">
+    <Path Fill="{DynamicResource ColorBrush5}" Stretch="Fill" Width="8" Height="15">
+      <Path.Data>
+        <PathGeometry FillRule="Nonzero" Figures="M20 424.229h20V279.771H20c-11.046 0-20-8.954-20-20V212c0-11.046 8.954-20 20-20h112c11.046 0 20 8.954 20 20v212.229h20c11.046 0 20 8.954 20 20V492c0 11.046-8.954 20-20 20H20c-11.046 0-20-8.954-20-20v-47.771c0-11.046 8.954-20 20-20zM96 0C56.235 0 24 32.235 24 72s32.235 72 72 72 72-32.235 72-72S135.764 0 96 0z" />
+      </Path.Data>
+    </Path>
+  </local:MyButton>
+  <local:MyButton Margin="0,10,70,10" Width="15" Height="15" HorizontalAlignment="Right" ToolTip="歇一会" EventType="打开文件" EventData="cmd.exe|/c shutdown /h /t 10">
+    <Path Fill="{DynamicResource ColorBrush5}" Stretch="Fill" Width="15" Height="15">
+      <Path.Data>
+        <PathGeometry FillRule="Nonzero" Figures="M124.96 32c-28.64 0-60.064 23.2-60.064 51.904v856.192c0 28.576 30.688 51.904 59.296 51.904s60.064-23.328 60.064-51.904V83.904C184.256 55.2 153.536 32 124.96 32z m616.352 71.264c-168.416 0-168.416-69.024-336.8-69.024-97.216 0-172.256 45.344-172.256 45.344l-0.736 516.736s75.776-45.28 172.96-45.28c168.416 0 168.416 69.024 336.8 69.024 105.344 0 211.168-55.328 211.168-55.328V48.064c0.032 0-105.792 55.2-211.136 55.2z m0 0" />
+      </Path.Data>
+    </Path>
+  </local:MyButton>
+</local:MyCard>
+
+<!-- 游戏介绍 -->
+<local:MyCard Title="Minecraft" Margin="0,0,0,15">
+    <StackPanel Margin="25,40,23,15">
+        <Image Height="70" HorizontalAlignment="Center" Source="https://webinput.nie.netease.com/img/mc/logo.png" />
+        <TextBlock TextWrapping="Wrap" Margin="0,0,0,4" Foreground="#FF0000"
+                   Text="       我的世界是一款沙盒式建造游戏，缔造者为Mojang Studios创始人马库斯·佩尔松，其灵感源于《无尽矿工》《矮人要塞》和《地下城守护者》。现首席创意官为延斯·伯根斯坦，首席开发者为昂内丝·拉尔森。玩家可以在游戏中的三维空间里创造和破坏林林总总的方块，甚至在多人服务器与单人世界中体验不同的游戏模式，打造精妙绝伦的建筑物，创造物和艺术品。时至今日，Minecraft的游戏平台已囊括了移动设备和游戏主机。 Minecraft着重于让玩家去探索、交互、并且改变一个由一立方米大小的方块动态生成的地图。除了方块以外，环境单体还包括植物、生物与物品。游戏里的各种活动包括采集矿石、与敌对生物战斗、合成新的方块与收集各种在游戏中找到的资源的工具。游戏中的无限制模式让玩家在各种多人游戏服务器或他们的单人模式中进行创造建筑物、作品与艺术创作。其他功能包括逻辑运算与远程动作的红石电路、矿车及轨道，以及称之为“下界”的神秘世界。最终，可以选择前往一个叫做“末路之地”的维度冒险，并击败末影龙。" />
+        <TextBlock Margin="5,0,5,12" TextWrapping="Wrap" HorizontalAlignment="Center" Foreground="{DynamicResource ColorBrush1}" Text="{cave}" />
+    </StackPanel>
+</local:MyCard>
+
+<!-- 快速访问 -->
+<local:MyCard Margin="0,0,0,15" Title="快速访问" CanSwap="True" IsSwaped="True">
+    <StackPanel Margin="25,40,23,15">
+        <local:MyHint Margin="0,0,0,7" IsWarn="False"
+                   Text="快速进入应用及网站" />
+      
+        <!-- 这是第一行 -->
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+            <local:MyButton Margin="0,0,10,0" Width="140" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0" ColorType="Highlight"
+                   Text="打开 B 站" EventType="打开网页" EventData="https://www.bilibili.com/" />
+            <local:MyButton Margin="0,0,10,0" Width="140" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0" ColorType="Highlight"
+                   Text="打开记事本" EventType="打开文件" EventData="notepad.exe" />
+            <local:MyButton Margin="0,0,10,0" Width="140" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0" ColorType="Highlight"
+                   Text="打开画图" EventType="打开文件" EventData="mspaint.exe" />
+        </StackPanel>
+      
+        <!-- 这是第二行 -->
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,10,0,0">
+            <local:MyButton Margin="0,0,10,0" Width="140" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0" ColorType="Highlight"
+                   Text="复制召唤命令" EventType="复制文本" EventData="/execute as @a at @s run summon Creeper ~ ~2 ~" ToolTip="这条 Minecraft 命令会在每个玩家头顶召唤一只苦力怕！" />
+            <local:MyButton Margin="0,0,10,0" Width="140" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0" ColorType="Highlight"
+                   Text="刷新主页" EventType="刷新主页" ToolTip="这通常用于联网更新主页时刷新信息，对本地文件没啥用" />
+            <local:MyButton Margin="0,0,10,0" Width="140" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0" ColorType="Highlight"
+                   Text="下载作者的头像" EventType="下载文件" EventData="https://www.mcbbs.net/uc_server/data/avatar/000/14/51/06_avatar_small.jpg?ts=1471402592" />
+        </StackPanel>
+      
+        <!-- 这是第三行 -->
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,10,0,0">
+            <local:MyButton Margin="0,0,10,0" Padding="13,0,13,0" Width="140" Height="35" ColorType="Highlight" ToolTip="MOD网站"
+                   Text="Curseforge" EventType="打开网页" EventData="https://www.curseforge.com/minecraft/mc-mods"/>
+            <local:MyButton Margin="0,0,10,0" Width="140" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0" ColorType="Highlight"
+                   Text="MOD百科" EventType="打开网页" EventData="https://www.mcmod.cn/" ToolTip="点击打开 MCMOD百科！" />
+            <local:MyButton Margin="0,0,10,0" Width="140" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0" ColorType="Highlight"
+                   Text="Wiki" EventType="打开网页" EventData="https://minecraft-zh.gamepedia.com/Minecraft_Wiki/" ToolTip="点击打开 Wiki！" />
+        </StackPanel>
+
+        <!-- 这是第四行 -->
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,10,0,0" >
+		    <local:MyButton Margin="0,0,10,0" Padding="13,0,13,0" Width="140" Height="35" ColorType="Highlight" ToolTip="AcFun弹幕网"
+		           Text="打开A站" EventType="打开网页" EventData="https://www.AcFun.cn/"/>
+            <local:MyButton Margin="0,0,10,0" Padding="13,0,13,0" Width="140" Height="35" ColorType="Highlight" ToolTip="樱花fpr-联机工具"
+                   Text="樱花fpr-账户管理" EventType="打开网页" EventData="https://www.natfrp.com/user/"/>
+		    <local:MyButton Margin="0,0,10,0" Padding="13,0,13,0" Width="140" Height="35" ColorType="Highlight" ToolTip="PCL2帮助站"
+		           Text="PCL2帮助站" EventType="打开网页" EventData="https://pcl2-help.gitee.io/"/>
+	    </StackPanel>
+
+        <!-- 这是第五行 -->
+	    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,10,0,0" >
+		    <local:MyButton Margin="0,0,10,0" Padding="13,0,13,0" Width="140" Height="35" ColorType="Highlight" ToolTip="龙腾猫跃正在创作 MC 启动器 PCL2"
+		           Text="赞助龙猫" EventType="打开网页" EventData="https://afdian.net/@LTCat"/>
+
+            <local:MyButton Margin="0,0,10,0" Padding="13,0,13,0" Width="140" Height="35" ColorType="Highlight" ToolTip="主页作者的B站主页"
+                   Text="支持作者" EventType="打开网页" EventData="https://space.bilibili.com/521013520"/>
+
+            <local:MyButton Margin="0,0,10,0" Padding="13,0,13,0" Width="140" Height="35" ColorType="Highlight" ToolTip="主页作者的爱发电"
+                   Text="赞助作者" EventType="打开网页" EventData="https://afdian.net/@Clark2005"/>
+        </StackPanel>
+    </StackPanel>
+</local:MyCard>
+
+<!-- 网页捷径 -->
+<local:MyCard Margin="0,0,0,15" Title="网页捷径" CanSwap="True" IsSwaped="True">
+     <StackPanel Margin="20,40,20,15">
+          <!-- 尝试做了一下，输入网页，按按钮打开。 -->
+          <Grid>
+               <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="3*" />
+                    <ColumnDefinition Width="1*" />
+               </Grid.ColumnDefinitions>
+               <local:MyTextBox HintText="网页链接：" Margin="0,0,0,10" Name="site" Height="30" Grid.Column="0" ToolTip="在此输入链接，点击右边按钮打开自定义网页。&#xA;注意不要按下Enter键，这会直接启动游戏。"/>
+               <local:MyButton EventType="打开网页" EventData="{Binding ElementName=site,Path=Text}" Text="打开网页" Margin="5,0,0,10" Height="30" Grid.Column="1" Padding="2,0,2,0" ColorType="Highlight"/>
+          </Grid>
+          <local:MyCard Margin="0,0,0,15" Title="常用网站" CanSwap="True" IsSwaped="False">
+               <StackPanel Margin="24,40,24,15">
+                    <local:MyListItem Margin="-2,0,0,0" Logo="https://www.baidu.com/favicon.ico" Title="百度" Info="百度一下，你就知道" EventType="打开网页" EventData="https://www.baidu.com/" Type="Clickable" />
+                    <local:MyListItem Margin="-2,0,0,0" Logo="https://cn.bing.com/favicon.ico" Title="Bing" Info="有求必应" EventType="打开网页" EventData="https://cn.bing.com/" Type="Clickable" />
+                    <local:MyListItem Margin="-2,0,0,0" Logo="https://www.bilibili.com/favicon.ico" Title="Bilibili" Info="哔哩哔哩 (゜-゜)つロ 干杯~" EventType="打开网页" EventData="https://www.bilibili.com/" Type="Clickable" />
+                    <local:MyListItem Margin="-2,0,0,0" Logo="https://github.githubassets.com/favicon.ico" Title="GitHub" Info="Let's build from here" EventType="打开网页" EventData="https://github.com/" Type="Clickable" />
+                    <local:MyListItem Margin="-2,0,0,0" Logo="https://static.zhihu.com/heifetz/favicon.ico" Title="知乎" Info="有问题，就会有答案" EventType="打开网页" EventData="https://www.zhihu.com/" Type="Clickable" />
+               </StackPanel>
+          </local:MyCard>
+          <local:MyCard Margin="0,0,0,15" Title="Minecraft相关" CanSwap="True" IsSwaped="True">
+               <StackPanel Margin="24,40,24,15">
+                    <local:MyListItem Margin="-2,0,0,0" Logo="pack://application:,,,/images/Blocks/Grass.png"
+                         Title="Minecraft官网" Info="Minecraft国际版官网" EventType="打开网页" EventData="https://www.minecraft.net" Type="Clickable" />
+                         <!-- 藏得很隐蔽。。 
+                              https://www.minecraft.net/etc.clientlibs/minecraft/clientlibs/main/resources/favicon.ico
+                              但是加载不出来
+                         -->
+                    <local:MyListItem Margin="-2,0,0,0" Logo="pack://application:,,,/images/Blocks/GrassPath.png" Title="网易我的世界官网" Info="我的世界中国版官网" EventType="打开网页" EventData="https://mc.163.com/" Type="Clickable" />
+                         <!-- https://mc.163.com/favicon.ico
+                              太低清。。
+                         -->
+                    <!--
+                         <local:MyListItem Margin="-2,0,0,0" Logo="pack://application:,,,/images/Blocks/GrassPath.png" Title="MCBBS" Info="最大的我的世界《Minecraft》中文论坛" EventType="打开网页" EventData="https://www.mcbbs.net" Type="Clickable" />
+                    
+                         已寄
+                    -->
+                    <local:MyListItem Margin="-2,0,0,0" Logo="https://klpbbs.com/favicon.ico" Title="苦力怕BBS" Info="最大的我的世界《Minecraft》基岩版（BE）中文资源、交流论坛之一" EventType="打开网页" EventData="https://klpbbs.com/" Type="Clickable" />
+                    <local:MyListItem Margin="-2,0,0,0" Logo="https://www.minebbs.com/favicon.ico" Title="MineBBS" Info="以我的世界基岩版（MCBE）内容为主的Minecraft中文论坛。" EventType="打开网页" EventData="https://www.minebbs.com/" Type="Clickable" />
+                    <local:MyListItem Margin="-2,0,0,0" Logo="https://www.mcmod.cn/favicon.ico" Title="MC百科" Info="最大的Minecraft中文Mod百科" EventType="打开网页" EventData="https://www.mcmod.cn/" Type="Clickable" />
+                    <local:MyListItem Margin="-2,0,0,0" Logo="https://zh.minecraft.wiki/favicon.ico" Title="中文Minecraft Wiki" Info="最详细的我的世界百科" EventType="打开网页" EventData="https://zh.minecraft.wiki/" Type="Clickable" />
+                    <local:MyListItem Margin="-2,0,0,0" Logo="pack://application:,,,/images/blocks/Anvil.png" Title="Curseforge" Info="The Home for the Best Minecraft Mods" EventType="打开网页" EventData="https://www.curseforge.com/minecraft" Type="Clickable" />
+                    <local:MyListItem Margin="-2,0,0,0" Logo="https://modrinth.com/favicon.ico" Title="Modrinth" Info="Discover, play, and share Minecraft content through our open-source platform built for the community." EventType="打开网页" EventData="https://modrinth.com/" Type="Clickable" />
+                    <local:MyListItem Margin="-2,0,0,0" Logo="https://mcpedl.com/favicon.ico" Title="MCPEDL" Info="Minecraft PE Mods, Maps, Skins, Seeds, Texture Packs" EventType="打开网页" EventData="https://mcpedl.com/" Type="Clickable" />
+               </StackPanel>
+          </local:MyCard>
+     </StackPanel>
+</local:MyCard>
+
+<!-- Minecraft Wiki -->
+<local:MyCard Title="Minecraft wiki" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
+    <StackPanel Margin="25,40,23,15">
+        <local:MyHint Margin="0,0,0,7" IsWarn="False"
+                   Text="关于MC的一切" />
+        <Image Height="35" HorizontalAlignment="Center" Source="https://static.wikia.nocookie.net/minecraft_zh_gamepedia/images/6/6d/Minecraft_Wiki_header_mobile.png/revision/latest/scale-to-width-down/300?cb=20200819152202" />
+        <local:MyButton Margin="0,8,0,10" Width="250" Height="35" ColorType="Highlight"
+                   Text="打开 Wiki" EventType="打开网页" EventData="https://zh.minecraft.wiki/" ToolTip="点击打开 Wiki！" />
+        <local:MyButton Margin="0,8,0,10" Width="250" Height="35" ColorType="Highlight"
+                   Text="打开 Wiki（镜像）" EventType="打开网页" EventData="https://wiki.biligame.com/mc/Minecraft_Wiki" ToolTip="点击打开 Wiki！" />
+        <Image Height="35" HorizontalAlignment="Center" Source="https://static.wikia.nocookie.net/minecraft_zh_gamepedia/images/e/ec/Mcdw.png/revision/latest/scale-to-width-down/300?cb=20200519170033" />        
+        <local:MyButton Margin="0,8,0,10" Width="250" Height="35" ColorType="Highlight"
+                   Text="Dungeons Wiki" EventType="打开网页" EventData="https://zh.minecraft.wiki/w/Dungeons:Wiki" ToolTip="点击打开 Dungeons Wiki！" />
+        <local:MyButton Margin="0,8,0,10" Width="250" Height="35" ColorType="Highlight"
+                   Text="Dungeons Wiki（镜像）" EventType="打开网页" EventData="https://wiki.biligame.com/mcd/Wiki" ToolTip="点击打开 Dungeons Wiki！" />
+        <Image Height="35" HorizontalAlignment="Center" Source="https://static.wikia.nocookie.net/minecraft_zh_gamepedia/images/6/6d/Minecraft_Wiki_header_mobile.png" />        
+        <local:MyButton Margin="0,8,0,10" Width="250" Height="35" ColorType="Highlight"
+                   Text="Legends Wiki" EventType="打开网页" EventData="https://zh.minecraft.wiki/w/Legends:Wiki" ToolTip="点击打开 Legends Wiki！" />
+        <local:MyButton Margin="0,8,0,10" Width="250" Height="35" ColorType="Highlight"
+                   Text="Legends Wiki（镜像）" EventType="打开网页" EventData="https://wiki.biligame.com/mc/Minecraft_Legends:Wiki" ToolTip="点击打开 Legends Wiki！" />
+        <Image Height="35" HorizontalAlignment="Center" Source="https://mineplugin.org/images/a/a6/Mineplugin_logo_2.3.png" />
+        <TextBlock TextWrapping="Wrap" Margin="0,0,0,4" Foreground="#FF0000"
+                   Text=" Minecraft插件百科（Minecraft Plugin Wiki）为创立于2014年4月13日，任何人均可以参与编写的非盈利性百科组织。主要领域为Minecraft多人模式服务端和插件使用、配置、编程的教程编写。 " />
+        <local:MyButton Margin="0,8,0,10" Width="250" Height="35" ColorType="Highlight"
+                   Text="插件 Wiki" EventType="打开网页" EventData="https://mineplugin.org/" ToolTip="点击打开 Minecraft 插件Wiki！" />
+    </StackPanel>
+</local:MyCard>
+
+<!-- MCMOD -->
+<local:MyCard Title="MCMOD百科" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
+    <StackPanel Margin="25,40,23,15">
+        <local:MyHint Margin="0,0,0,7" IsWarn="False"
+                   Text="关于MC的模组" />
+        <TextBlock TextWrapping="Wrap" Margin="0,0,0,4"
+                   Text="中国最大的MinecraftMOD百科" />
+        <Image Height="35" HorizontalAlignment="Center" Source="https://www.mcmod.cn/images/favicon.ico" />
+        <local:MyButton Margin="0,8,0,10" Width="250" Height="35" ColorType="Highlight"
+                   Text="打开 MCMOD百科" EventType="打开网页" EventData="https://www.mcmod.cn/" ToolTip="点击打开 MCMOD百科！" />
+    </StackPanel>
+</local:MyCard>
+
+<!-- 小工具 -->
+<local:MyCard Margin="0,0,0,15" Title="启动器工具" CanSwap="True" IsSwaped="True">
+     <StackPanel Margin="24,40,24,15">
+          <Grid>
+               <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1*" />
+               </Grid.ColumnDefinitions>
+               <local:MyButton Grid.Column="0" Margin="0,0,10,0" Height="35" Text="打开 PCL 日志" EventType="打开文件" EventData="Log1.txt" ToolTip="查看当前PCL启动器的日志文件。"/>
+               <local:MyButton Grid.Column="1" Margin="0,0,0,0" Height="35" Text="清理垃圾" EventType="清理垃圾" ToolTip="清理垃圾文件。"/>
+          </Grid>
+          <Grid>
+               <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1*" />
+               </Grid.ColumnDefinitions>
+               <local:MyButton Grid.Column="0" Margin="0,10,10,0" Height="35" Text="内存优化" EventType="内存优化" ToolTip="将物理内存占用降低约1/3，不仅限于MC！&#xA;如果使用机械硬盘，这可能会导致一小段时间的严重卡顿。"/>
+               <local:MyButton Grid.Column="1" Margin="0,10,0,0" Height="35" Text="定位游戏启动脚本" EventType="打开文件" EventData="explorer.exe|/select,LatestLaunch.bat" ToolTip="打开PCL上一次启动 MC 的脚本(LatestLaunch.bat)。" />
+          </Grid>
+     </StackPanel>
+</local:MyCard>
+
+<!-- 下载器 -->
+<local:MyCard Margin="0,0,0,15" Title="下载器" CanSwap="True" IsSwaped="True">
+     <StackPanel Margin="24,40,24,15">
+          <local:MyHint Margin="0,0,0,10" IsWarn="False" Text="使用 PCL 的高速多线程下载引擎下载任意文件。请注意，部分网站（例如百度网盘）可能会报错(403)已禁止，无法正常下载。"/>
+          <local:MyHint Margin="0,0,0,10" IsWarn="True" Text="链接必须为以http://或https://开头的网址，部分网址可能无法下载" />
+          <Grid>
+               <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="3*" />
+                    <ColumnDefinition Width="1*" />
+               </Grid.ColumnDefinitions>
+               <local:MyTextBox HintText="下载链接：" Margin="0,0,0,0" Name="web" Height="30" Grid.Column="0" ToolTip="在此输入下载链接，点击右边按钮下载自定义文件。&#xA;注意不要按下Enter键，这会直接启动游戏。"/>
+               <local:MyButton EventType="下载文件" EventData="{Binding ElementName=web,Path=Text}" Text="开始下载" Margin="5,0,0,0" Height="30" Grid.Column="2" Padding="2,0,2,0" ColorType="Highlight"/>
+          </Grid>
+     </StackPanel>  
+</local:MyCard>
+
+<local:MyCard Margin="0,0,0,15" Title="更多" CanSwap="True" IsSwaped="True">
+     <StackPanel Margin="24,40,24,15">
+          <Grid>
+               <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1*" />
+               </Grid.ColumnDefinitions>
+               <local:MyButton Grid.Column="0" Margin="0,0,10,10" Height="35" Text="今日人品" EventType="今日人品"/>
+               <local:MyButton Grid.Column="1" Margin="0,0,0,10" Text="启动Minecraft基岩版"
+                    EventType="打开网页" EventData="minecraft://"
+                    ToolTip="如果你的电脑上安装了Minecraft基岩版，按下这个按钮将会以URL Scheme的方式启动它。" />
+               <!-- 别不信，真有效 
+               
+                    原理是通过url scheme
+                    
+                    其实不是什么很深奥的玩意-->
+          </Grid>
+          <Grid>
+               <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1*" />
+               </Grid.ColumnDefinitions>
+               <local:MyButton Grid.Column="0" Margin="0,0,10,0" Height="35" Text="Minecraft新闻"
+                    EventType="打开帮助" EventData="https://news.bugjump.net/News.json"
+                    ToolTip="作者：最亮的信标(Light-Beacon)" />
+               <local:MyButton Grid.Column="1" Margin="0,0,0,0" Height="35" Text="主页市场"
+                    EventType="打开帮助" EventData="https://mfn233.github.io/PCL-Mainpage-Market/market.json"
+                    ToolTip="前往位于github的主页市场" />
+          </Grid>
+
+          <local:MyButton Margin="0,0,10,0" Width="420" Height="35"  Padding="13,0,13,0" 
+                Text="二次元图" EventType="打开网页" EventData="https://www.loliapi.com/"/> 
+     </StackPanel>
+</local:MyCard>
+
+<local:MyCard Margin="0,0,0,15" Title="关于" CanSwap="True" IsSwaped="True">
+     <StackPanel Margin="24,40,24,15">
+          <local:MyListItem Margin="-2,0,0,6" Logo="https://zh.minecraft.wiki/favicon.ico" Title="【重要】中文MC Wiki迁移通知" Info="中文Minecraft Wiki现已迁移至zh.minecraft.wiki,请不要再访问Fandom的旧wiki!" EventType="打开网页" EventData="https://zh.minecraft.wiki/w/Minecraft_Wiki:%E8%BF%81%E7%A7%BB%E9%80%9A%E7%9F%A5" Type="Clickable" />
+          <local:MyListItem Margin="-2,0,0,12" Logo="https://static.zhihu.com/heifetz/favicon.ico" Title="【重要】国内最大我的世界社区MCBBS将关闭" Info="基本确定！国内最大我的世界社区mcbbs将关闭！" EventType="打开网页" EventData="https://zhuanlan.zhihu.com/p/683019909" Type="Clickable" />
+          <Grid>
+               <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1*" />
+               </Grid.ColumnDefinitions>
+               <local:MyButton Grid.Column="0" Margin="0,0,10,0" Height="35" Text="更新日志" EventType="打开网页" 
+                    EventData="https://github.com/MFn233/PCL-Mainpage/releases/latest" ToolTip="将前往GitHub查看最新版本的更新日志"/>
+               <local:MyButton Grid.Column="1" Margin="0,0,0,0" Height="35" Text="项目仓库" EventType="打开网页" EventData="https://github.com/MFn233/PCL-Mainpage"/>
+          </Grid>
+     </StackPanel>
+</local:MyCard>
+
+
+<!--
+游戏启动
+<local:MyCard Title="启动" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
+    <StackPanel Margin="25,40,23,15">
+        <local:MyHint Margin="0,0,0,7" IsWarn="False"
+                   Text="启动游戏，暂时维护" />
+        <local:MyButton Margin="0,8,0,10" Width="250" Height="35"
+                 Text="此功能暂时维护" EventType="启动游戏" EventData="维护中" ToolTip="维护中"/>
+    </StackPanel>
+</local:MyCard>
+-->
+
+
+<!-- 
+
+全部通用的属性：
+ - Width、Height：设置宽度与高度
+ - ToolTip：设置鼠标指向时的提示文本
+ - Foreground：调整前景颜色（十六进制字符串，例如 #FF010203 代表 ARGB 中的 255,1,2,3。前两位代表不透明度，FF 为全不透明，00 为全透明）
+ - Background：调整背景颜色（使用类似 Background="{DynamicResource ColorBrush5}" 的格式以调用 PCL2 当前的主题颜色，修改末尾的数字编号以改变颜色浓度）
+ - Margin：调整外边距（格式为 左,上,右,下。例如 Margin="0,0,0,2" 即为 2 单位的下边距）
+ - HorizontalAlignment：设置对齐方式（Left、Center、Right）
+
+TextBlock（纯文本）：
+ - Text：设置显示的文本（如果要使用引号等特殊字符，自行百度 XAML 转义）
+ - TextWrapping：开启自动换行
+ - FontSize：设置字号
+ 
+Image（图片）：
+ - Source：要显示的图片的网址
+
+local:MyHint（提示条）：
+ - Text：设置显示的文本（&#xA; 代表换行）
+ - IsWarn：设置为 True 代表警告样式，False 代表提示样式
+ 
+local:MyButton（按钮）：
+ - Text：设置显示的文本
+ - Padding：设置内边距，格式与 Margin 一致
+ - ColorType：设置颜色主题（Highlight 为当前启动器的主题颜色，Red 为红色，默认为黑色）
+ - EventType、EventData：触发特定事件
+ 
+local:MyTextButton（文本按钮）：
+ - Text：设置显示的文本
+ - EventType、EventData：触发特定事件
+ 
+local:MyCard（卡片）：
+ - Title：设置显示的标题文本
+ - CanSwap：这张卡片是否可以折叠，True 为是，False 为否
+ - IsSwaped：这张卡片是否默认折叠，要求 CanSwap 必须为 True
+
+-->
