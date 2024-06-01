@@ -1,4 +1,4 @@
-﻿<!-- 这是 PCL2 的主页自定义文件。你可以通过修改这个文件来自定义 PCL2 主页：添加文本、打开网页、启动游戏，等等。
+<!-- 这是 PCL2 的主页自定义文件。你可以通过修改这个文件来自定义 PCL2 主页：添加文本、打开网页、启动游戏，等等。
      如果你倒腾这个文件把 PCL2 玩炸了，把这个文件直接删除就行了。
      如果你懂得 WPF 的布局文件编写，你甚至可以做出不少的新玩意儿…… -->
 
@@ -30,6 +30,10 @@
     </Path>
   </local:MyButton>
 </local:MyCard>
+
+<local:MyButton Padding="13,10,13,10" ColorType="Red"
+                    Text="打开 Minecraft News" EventType="打开帮助" EventData="https://news.bugjump.net/News.json"/>
+    <StackPanel Margin="0,0,0,15"/>
 
 <!-- 游戏介绍 -->
 <local:MyCard Title="Minecraft" Margin="0,0,0,15">
@@ -260,6 +264,7 @@
                     EventType="打开帮助" EventData="https://mfn233.github.io/PCL-Mainpage-Market/market.json"
                     ToolTip="前往位于github的主页市场" />
           </Grid>
+
           <local:MyButton Margin="0,0,10,0" Width="420" Height="35"  Padding="13,0,13,0" 
                 Text="二次元图" EventType="打开网页" EventData="https://www.loliapi.com/"/> 
      </StackPanel>
@@ -281,6 +286,10 @@
           </Grid>
      </StackPanel>
 </local:MyCard>
+
+<local:MyButton Padding="13,10,13,10" ColorType="Red"
+                    Text="打开项目地址" EventType="打开网页" EventData="https://github.com/Clark2005/PCL2_Mainpage"/>
+    <StackPanel Margin="0,0,0,15"/>
 
 
 <!--
