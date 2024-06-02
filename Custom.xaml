@@ -272,7 +272,7 @@
             <local:MyButton Margin="0,0,10,0" Width="140" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0" ColorType="Highlight"
                    Text="MOD百科" EventType="打开网页" EventData="https://www.mcmod.cn/" ToolTip="点击打开 MCMOD百科！" />
             <local:MyButton Margin="0,0,10,0" Width="140" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0" ColorType="Highlight"
-                   Text="Wiki" EventType="打开网页" EventData="https://minecraft-zh.gamepedia.com/Minecraft_Wiki/" ToolTip="点击打开 Wiki！" />
+                   Text="Wiki" EventType="打开网页" EventData="https://zh.minecraft.wiki/" ToolTip="点击打开 Wiki！" />
         </StackPanel>
 
         <!-- 这是第四行 -->
