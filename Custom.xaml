@@ -315,7 +315,7 @@
                <StackPanel Margin="24,40,24,15">
                     <local:MyListItem Margin="-2,0,0,0" Logo="https://www.baidu.com/favicon.ico" Title="百度" Info="百度一下，你就知道" EventType="打开网页" EventData="https://www.baidu.com/" Type="Clickable" />
                     <local:MyListItem Margin="-2,0,0,0" Logo="https://cn.bing.com/favicon.ico" Title="Bing" Info="有求必应" EventType="打开网页" EventData="https://cn.bing.com/" Type="Clickable" />
-                    <local:MyListItem Margin="-2,0,0,0" Logo="https://www.bilibili.com/favicon.ico" Title="Bilibili" Info="哔哩哔哩 (゜-゜)つロ 干杯~" EventType="打开网页" EventData="https://www.bilibili.com/" Type="Clickable" />
+                    <local:MyListItem Margin="-2,0,0,0" Logo="https://Clark2005.github.io/bilibili.ico" Title="Bilibili" Info="哔哩哔哩 (゜-゜)つロ 干杯~" EventType="打开网页" EventData="https://www.bilibili.com/" Type="Clickable" />
                     <local:MyListItem Margin="-2,0,0,0" Logo="https://github.githubassets.com/favicon.ico" Title="GitHub" Info="Let's build from here" EventType="打开网页" EventData="https://github.com/" Type="Clickable" />
                     <local:MyListItem Margin="-2,0,0,0" Logo="https://static.zhihu.com/heifetz/favicon.ico" Title="知乎" Info="有问题，就会有答案" EventType="打开网页" EventData="https://www.zhihu.com/" Type="Clickable" />
                </StackPanel>
@@ -328,7 +328,7 @@
                               https://www.minecraft.net/etc.clientlibs/minecraft/clientlibs/main/resources/favicon.ico
                               但是加载不出来
                          -->
-                    <local:MyListItem Margin="-2,0,0,0" Logo=" " Title="网易我的世界官网" Info="我的世界中国版官网" EventType="打开网页" EventData="https://mc.163.com/" Type="Clickable" />
+                    <local:MyListItem Margin="-2,0,0,0" Logo="pack://application:,,,/images/Blocks/GrassPath.png" Title="网易我的世界官网" Info="我的世界中国版官网" EventType="打开网页" EventData="https://mc.163.com/" Type="Clickable" />
                          <!-- https://mc.163.com/favicon.ico
                               太低清。。
                          -->
@@ -370,22 +370,22 @@
     <StackPanel Margin="25,40,23,15">
         <local:MyHint Margin="0,0,0,7" IsWarn="False"
                    Text="关于MC的一切" />
-        <Image Height="35" HorizontalAlignment="Center" Source="https://static.wikia.nocookie.net/minecraft_zh_gamepedia/images/6/6d/Minecraft_Wiki_header_mobile.png/revision/latest/scale-to-width-down/300?cb=20200819152202" />
+        <Image Height="140" HorizontalAlignment="Center" Source="https://zh.minecraft.wiki/images/Wiki%402x.png" />
         <local:MyButton Margin="0,8,0,10" Width="250" Height="35" ColorType="Highlight"
                    Text="打开 Wiki" EventType="打开网页" EventData="https://zh.minecraft.wiki/" ToolTip="点击打开 Wiki！" />
         <local:MyButton Margin="0,8,0,10" Width="250" Height="35" ColorType="Highlight"
                    Text="打开 Wiki（镜像）" EventType="打开网页" EventData="https://wiki.biligame.com/mc/Minecraft_Wiki" ToolTip="点击打开 Wiki！" />
-        <Image Height="35" HorizontalAlignment="Center" Source="https://static.wikia.nocookie.net/minecraft_zh_gamepedia/images/e/ec/Mcdw.png/revision/latest/scale-to-width-down/300?cb=20200519170033" />        
+        <Image Height="70" HorizontalAlignment="Center" Source="https://Clark2005.github.io/Mcdw.png" />        
         <local:MyButton Margin="0,8,0,10" Width="250" Height="35" ColorType="Highlight"
                    Text="Dungeons Wiki" EventType="打开网页" EventData="https://zh.minecraft.wiki/w/Dungeons:Wiki" ToolTip="点击打开 Dungeons Wiki！" />
         <local:MyButton Margin="0,8,0,10" Width="250" Height="35" ColorType="Highlight"
                    Text="Dungeons Wiki（镜像）" EventType="打开网页" EventData="https://wiki.biligame.com/mcd/Wiki" ToolTip="点击打开 Dungeons Wiki！" />
-        <Image Height="35" HorizontalAlignment="Center" Source="https://static.wikia.nocookie.net/minecraft_zh_gamepedia/images/6/6d/Minecraft_Wiki_header_mobile.png" />        
+        <Image Height="35" HorizontalAlignment="Center" Source="https://Clark2005.github.io/Minecraft_Wiki_header_mobile.png" />        
         <local:MyButton Margin="0,8,0,10" Width="250" Height="35" ColorType="Highlight"
                    Text="Legends Wiki" EventType="打开网页" EventData="https://zh.minecraft.wiki/w/Legends:Wiki" ToolTip="点击打开 Legends Wiki！" />
         <local:MyButton Margin="0,8,0,10" Width="250" Height="35" ColorType="Highlight"
                    Text="Legends Wiki（镜像）" EventType="打开网页" EventData="https://wiki.biligame.com/mc/Minecraft_Legends:Wiki" ToolTip="点击打开 Legends Wiki！" />
-        <Image Height="35" HorizontalAlignment="Center" Source="https://mineplugin.org/images/a/a6/Mineplugin_logo_2.3.png" />
+        <Image Height="70" HorizontalAlignment="Center" Source="https://mineplugin.org/images/a/a6/Mineplugin_logo_2.3.png" />
         <TextBlock TextWrapping="Wrap" Margin="0,0,0,4" Foreground="#FF0000"
                    Text=" Minecraft插件百科（Minecraft Plugin Wiki）为创立于2014年4月13日，任何人均可以参与编写的非盈利性百科组织。主要领域为Minecraft多人模式服务端和插件使用、配置、编程的教程编写。 " />
         <local:MyButton Margin="0,8,0,10" Width="250" Height="35" ColorType="Highlight"
@@ -400,7 +400,7 @@
                    Text="关于MC的模组" />
         <TextBlock TextWrapping="Wrap" Margin="0,0,0,4"
                    Text="中国最大的MinecraftMOD百科" />
-        <Image Height="35" HorizontalAlignment="Center" Source="https://www.mcmod.cn/images/favicon.ico" />
+        <Image Height="70" HorizontalAlignment="Center" Source="https://www.mcmod.cn/images/logo.gif" />
         <local:MyButton Margin="0,8,0,10" Width="250" Height="35" ColorType="Highlight"
                    Text="打开 MCMOD百科" EventType="打开网页" EventData="https://www.mcmod.cn/" ToolTip="点击打开 MCMOD百科！" />
     </StackPanel>
